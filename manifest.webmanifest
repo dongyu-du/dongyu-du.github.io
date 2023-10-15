@@ -1,0 +1,18 @@
+{
+  "name": "Dongyu Du",
+  "short_name": "Dongyu Du",
+  "lang": "en-us",
+  "theme_color": "#196F3D",
+  "background_color": "#196F3D",
+  "icons": [{
+    "src": "/media/icon_hu7578926095497cd8968beeffe7db75c7_3085_192x192_fill_lanczos_center_3.png",
+    "sizes": "192x192",
+    "type": "image/png"
+    }, {
+    "src": "/media/icon_hu7578926095497cd8968beeffe7db75c7_3085_512x512_fill_lanczos_center_3.png",
+    "sizes": "512x512",
+    "type": "image/png"
+     }],
+  "display": "standalone",
+  "start_url": "/?utm_source=web_app_manifest"
+}
