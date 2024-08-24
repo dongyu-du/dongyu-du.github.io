@@ -43,7 +43,7 @@
       "headline": "A boundary migration model for imaging within volumetric scattering media",
       
       "image": [
-        "https://example.com/publication/nc2022/featured.png"
+        "https://example.com/publication/nc2022/feature.png"
       ],
       
       "datePublished": "2022-06-09T00:00:00Z",
@@ -130,7 +130,9 @@
                 <li class="nav-item">
                   <a class="nav-link " href="/#about"><span>Home</span></a>
                 </li>
-
+                <li class="nav-item">
+                  <a class="nav-link " href="/#News" data-target="#News"><span>News</span></a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link " href="/#Publications"><span>Publications</span></a>
                 </li>
@@ -145,13 +147,17 @@
             <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
             </ul>
 
+            <div class="navbar-text ml-auto" style="color: #555; font-size: 14px;">
+              Last updated: <span id="last-updated">June 2024</span>
+            </div>
+
           </div>
         </nav>
       </header>
 
     </div>
 
-    <div class="page-body">
+    <div class="page-body" style="padding: 60px 0 60px 0;">
       
       <div class="pub">
         <div class="article-container pt-3">
@@ -277,46 +283,6 @@
           </p>
           <div style="text-align:center;">Fig3. Comparisons on reconstructing Lambertian objects in the fog</div></div>
 
-          <div class="share-box">
-            <ul class="share"> 
-                <li>
-                  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com%2Fpublication%2Fnc2022%2F&amp;text=A&#43;boundary&#43;migration&#43;model&#43;for&#43;imaging&#43;within&#43;volumetric&#43;scattering&#43;media" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fexample.com%2Fpublication%2Fnc2022%2F&amp;t=A&#43;boundary&#43;migration&#43;model&#43;for&#43;imaging&#43;within&#43;volumetric&#43;scattering&#43;media" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="mailto:?subject=A%20boundary%20migration%20model%20for%20imaging%20within%20volumetric%20scattering%20media&amp;body=https%3A%2F%2Fexample.com%2Fpublication%2Fnc2022%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
-                    <i class="fas fa-envelope"></i>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fexample.com%2Fpublication%2Fnc2022%2F&amp;title=A&#43;boundary&#43;migration&#43;model&#43;for&#43;imaging&#43;within&#43;volumetric&#43;scattering&#43;media" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="whatsapp://send?text=A&#43;boundary&#43;migration&#43;model&#43;for&#43;imaging&#43;within&#43;volumetric&#43;scattering&#43;media%20https%3A%2F%2Fexample.com%2Fpublication%2Fnc2022%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fexample.com%2Fpublication%2Fnc2022%2F&amp;title=A&#43;boundary&#43;migration&#43;model&#43;for&#43;imaging&#43;within&#43;volumetric&#43;scattering&#43;media" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
-                    <i class="fab fa-weibo"></i>
-                  </a>
-                </li>
-              
-            </ul>
-          </div>
 
           <div class="media author-card content-widget-hr">
               
@@ -364,6 +330,7 @@
 
         </div>
       </div>
+
     </div>
 
     <div class="page-footer">
@@ -372,7 +339,7 @@
         <footer class="site-footer">
 
           <p class="powered-by copyright-license-text">
-            © 2023 Dongyu Du. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+            © 2024 Dongyu Du. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
           </p>
         
           <p class="powered-by footer-license-icons">
@@ -387,9 +354,7 @@
               
             </a>
           </p>
-          <p class="powered-by">
-            Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
-          </p>
+
         </footer>
 
       </div>
@@ -443,6 +408,14 @@
 
     <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
 
+    <script>
+      document.getElementById('last-updated').textContent = new Date(document.lastModified).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long'
+        // day: 'numeric'
+      });
+    </script>
+
   </body>
-  
+
 </html>
